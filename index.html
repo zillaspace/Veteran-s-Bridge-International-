@@ -1,0 +1,1690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Veterans Bridge International — Recovery Through Purpose</title>
+<meta name="description" content="Veterans Bridge International restores lives through structured rehabilitation and purpose-driven mentorship for Ukrainian veterans, supported by U.S. veteran mentors.">
+<meta name="keywords" content="veteran rehabilitation, PTSD treatment, Ukraine veteran support, veteran mentorship programs, cross-border rehabilitation, veteran recovery, military PTSD, veteran family support, trauma recovery, veteran reintegration">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #0B1D33;
+    --navy-deep: #071426;
+    --slate: #2C3E50;
+    --steel: #4A5568;
+    --warm-gray: #6B7280;
+    --light-gray: #E5E7EB;
+    --off-white: #F7F6F3;
+    --cream: #FAF9F6;
+    --gold: #B8860B;
+    --gold-light: #D4A843;
+    --gold-muted: #C9A84C;
+    --rust: #8B4513;
+    --white: #FFFFFF;
+    --font-display: 'Cormorant Garamond', Georgia, serif;
+    --font-body: 'Source Sans 3', 'Segoe UI', sans-serif;
+    --max-width: 1200px;
+    --transition: 0.3s ease;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; font-size: 16px; }
+
+  body {
+    font-family: var(--font-body);
+    color: var(--slate);
+    background: var(--cream);
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ── NAV ── */
+  .nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+    background: rgba(11, 29, 51, 0.97);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(184, 134, 11, 0.15);
+    transition: var(--transition);
+  }
+  .nav-inner {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    height: 72px;
+  }
+  .nav-logo {
+    font-family: var(--font-display);
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--white);
+    text-decoration: none;
+    letter-spacing: 0.02em;
+  }
+  .nav-logo span { color: var(--gold-light); }
+  .nav-links { display: flex; gap: 2rem; align-items: center; }
+  .nav-links a {
+    font-family: var(--font-body);
+    font-size: 0.82rem;
+    font-weight: 500;
+    color: rgba(255,255,255,0.75);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    transition: color var(--transition);
+  }
+  .nav-links a:hover { color: var(--gold-light); }
+  .nav-cta {
+    background: var(--gold) !important;
+    color: var(--white) !important;
+    padding: 0.55rem 1.3rem !important;
+    border-radius: 2px;
+    font-weight: 600 !important;
+    letter-spacing: 0.08em !important;
+    transition: background var(--transition) !important;
+  }
+  .nav-cta:hover { background: var(--gold-light) !important; }
+  .nav-mobile-toggle {
+    display: none;
+    background: none; border: none; cursor: pointer;
+    width: 28px; height: 20px; position: relative;
+  }
+  .nav-mobile-toggle span {
+    display: block; width: 100%; height: 2px;
+    background: var(--white); position: absolute; left: 0;
+    transition: var(--transition);
+  }
+  .nav-mobile-toggle span:nth-child(1) { top: 0; }
+  .nav-mobile-toggle span:nth-child(2) { top: 9px; }
+  .nav-mobile-toggle span:nth-child(3) { top: 18px; }
+
+  /* ── HERO ── */
+  .hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background: var(--navy-deep);
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute; inset: 0;
+    background:
+      radial-gradient(ellipse at 20% 80%, rgba(184,134,11,0.06) 0%, transparent 50%),
+      radial-gradient(ellipse at 80% 20%, rgba(74,85,104,0.15) 0%, transparent 50%),
+      linear-gradient(175deg, var(--navy-deep) 0%, #0E2240 40%, #132D4F 100%);
+  }
+  .hero::after {
+    content: '';
+    position: absolute; inset: 0;
+    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.015'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    opacity: 0.5;
+  }
+  .hero-content {
+    position: relative; z-index: 2;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 8rem 2rem 3rem;
+    width: 100%;
+  }
+  .hero-eyebrow {
+    font-family: var(--font-body);
+    font-size: 0.78rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    color: var(--gold-muted);
+    margin-bottom: 1.5rem;
+    opacity: 0;
+    animation: fadeUp 0.8s 0.3s forwards;
+  }
+  .hero h1 {
+    font-family: var(--font-display);
+    font-size: clamp(2.8rem, 5.5vw, 4.5rem);
+    font-weight: 500;
+    line-height: 1.15;
+    color: var(--white);
+    max-width: 780px;
+    margin-bottom: 2rem;
+    opacity: 0;
+    animation: fadeUp 0.8s 0.5s forwards;
+  }
+  .hero-sub {
+    font-family: var(--font-body);
+    font-size: 1.15rem;
+    font-weight: 300;
+    line-height: 1.8;
+    color: rgba(255,255,255,0.7);
+    max-width: 600px;
+    margin-bottom: 3rem;
+    opacity: 0;
+    animation: fadeUp 0.8s 0.7s forwards;
+  }
+  .hero-actions {
+    display: flex; gap: 1.25rem; flex-wrap: wrap;
+    opacity: 0;
+    animation: fadeUp 0.8s 0.9s forwards;
+  }
+  .btn-primary {
+    display: inline-flex; align-items: center; gap: 0.5rem;
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    padding: 1rem 2.2rem;
+    background: var(--gold);
+    color: var(--white);
+    text-decoration: none;
+    border: none; cursor: pointer;
+    transition: all var(--transition);
+  }
+  .btn-primary:hover { background: var(--gold-light); transform: translateY(-1px); }
+  .btn-outline {
+    display: inline-flex; align-items: center; gap: 0.5rem;
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    padding: 1rem 2.2rem;
+    background: transparent;
+    color: rgba(255,255,255,0.8);
+    text-decoration: none;
+    border: 1px solid rgba(255,255,255,0.2);
+    cursor: pointer;
+    transition: all var(--transition);
+  }
+  .btn-outline:hover { border-color: var(--gold-muted); color: var(--gold-light); }
+  .hero-stat-bar {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    background: rgba(11, 29, 51, 0.6);
+    border-top: 1px solid rgba(184,134,11,0.12);
+    backdrop-filter: blur(8px);
+    z-index: 2;
+  }
+  .hero-stat-bar-inner {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0 2rem;
+  }
+  .hero-stat {
+    padding: 1.5rem 1rem;
+    text-align: center;
+    border-right: 1px solid rgba(255,255,255,0.06);
+  }
+  .hero-stat:last-child { border-right: none; }
+  .hero-stat-num {
+    font-family: var(--font-display);
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--gold-light);
+  }
+  .hero-stat-label {
+    font-size: 0.72rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: rgba(255,255,255,0.5);
+    margin-top: 0.25rem;
+  }
+
+  /* ── SECTION SYSTEM ── */
+  .section {
+    padding: 6rem 2rem;
+  }
+  .section-dark {
+    background: var(--navy-deep);
+    color: var(--white);
+  }
+  .section-warm {
+    background: var(--off-white);
+  }
+  .section-inner {
+    max-width: var(--max-width);
+    margin: 0 auto;
+  }
+  .section-eyebrow {
+    font-family: var(--font-body);
+    font-size: 0.72rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    color: var(--gold);
+    margin-bottom: 1rem;
+  }
+  .section-dark .section-eyebrow { color: var(--gold-muted); }
+  .section-title {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 3.5vw, 2.8rem);
+    font-weight: 500;
+    line-height: 1.2;
+    color: var(--navy);
+    margin-bottom: 1.5rem;
+    max-width: 700px;
+  }
+  .section-dark .section-title { color: var(--white); }
+  .section-lead {
+    font-size: 1.08rem;
+    font-weight: 300;
+    line-height: 1.8;
+    color: var(--steel);
+    max-width: 680px;
+    margin-bottom: 3rem;
+  }
+  .section-dark .section-lead { color: rgba(255,255,255,0.65); }
+
+  /* ── ABOUT / MISSION ── */
+  .mission-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: start;
+  }
+  .mission-text p {
+    margin-bottom: 1.5rem;
+    font-size: 1.02rem;
+    line-height: 1.85;
+    color: var(--steel);
+  }
+  .mission-pillars {
+    display: flex; flex-direction: column; gap: 1.5rem;
+  }
+  .pillar-card {
+    background: var(--white);
+    border: 1px solid var(--light-gray);
+    padding: 2rem;
+    position: relative;
+    transition: var(--transition);
+  }
+  .pillar-card::before {
+    content: '';
+    position: absolute; top: 0; left: 0; bottom: 0;
+    width: 3px; background: var(--gold);
+  }
+  .pillar-card:hover { border-color: var(--gold-muted); transform: translateX(4px); }
+  .pillar-card h4 {
+    font-family: var(--font-display);
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 0.5rem;
+  }
+  .pillar-card p {
+    font-size: 0.92rem;
+    color: var(--warm-gray);
+    line-height: 1.65;
+  }
+
+  /* ── PROGRAM ── */
+  .program-tiers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+  }
+  .tier-card {
+    background: var(--white);
+    border: 1px solid var(--light-gray);
+    padding: 3rem;
+    position: relative;
+  }
+  .tier-label {
+    font-family: var(--font-body);
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: var(--gold);
+    margin-bottom: 1rem;
+  }
+  .tier-card h3 {
+    font-family: var(--font-display);
+    font-size: 1.55rem;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 1rem;
+    line-height: 1.3;
+  }
+  .tier-card p {
+    font-size: 0.95rem;
+    color: var(--steel);
+    line-height: 1.75;
+    margin-bottom: 1rem;
+  }
+  .tier-features {
+    list-style: none;
+    margin-top: 1.5rem;
+  }
+  .tier-features li {
+    font-size: 0.9rem;
+    color: var(--steel);
+    padding: 0.55rem 0;
+    border-bottom: 1px solid rgba(0,0,0,0.04);
+    padding-left: 1.2rem;
+    position: relative;
+  }
+  .tier-features li::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 50%;
+    width: 6px; height: 6px;
+    background: var(--gold);
+    transform: translateY(-50%) rotate(45deg);
+  }
+
+  /* ── MENTORSHIP ── */
+  .mentorship-layout {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 4rem;
+    align-items: center;
+  }
+  .mentorship-quote {
+    font-family: var(--font-display);
+    font-size: 1.8rem;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 1.5;
+    color: var(--white);
+    margin-bottom: 2rem;
+    padding-left: 2rem;
+    border-left: 2px solid var(--gold-muted);
+  }
+  .mentorship-body p {
+    font-size: 1rem;
+    line-height: 1.85;
+    color: rgba(255,255,255,0.7);
+    margin-bottom: 1.25rem;
+  }
+  .mentorship-roles {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+  }
+  .role-item {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    padding: 1.5rem;
+    text-align: center;
+    transition: var(--transition);
+  }
+  .role-item:hover {
+    background: rgba(184,134,11,0.08);
+    border-color: rgba(184,134,11,0.2);
+  }
+  .role-item h4 {
+    font-family: var(--font-display);
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--gold-light);
+    margin-bottom: 0.4rem;
+  }
+  .role-item p {
+    font-size: 0.82rem;
+    color: rgba(255,255,255,0.5);
+    line-height: 1.5;
+  }
+
+  /* ── CLINICAL ── */
+  .clinical-notice {
+    background: rgba(184,134,11,0.06);
+    border: 1px solid rgba(184,134,11,0.15);
+    padding: 1.25rem 1.5rem;
+    font-size: 0.88rem;
+    color: var(--steel);
+    line-height: 1.65;
+    margin-bottom: 2.5rem;
+    max-width: 680px;
+  }
+  .clinical-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  .clinical-card {
+    background: var(--white);
+    border: 1px solid var(--light-gray);
+    padding: 2rem;
+  }
+  .clinical-card h4 {
+    font-family: var(--font-display);
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 0.5rem;
+  }
+  .clinical-card .status {
+    font-size: 0.72rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--gold);
+    margin-bottom: 0.75rem;
+  }
+  .clinical-card p {
+    font-size: 0.9rem;
+    color: var(--warm-gray);
+    line-height: 1.65;
+  }
+
+  /* ── IMPACT / FINANCIAL ── */
+  .impact-hero-stat {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 4rem;
+  }
+  .impact-stat-card {
+    text-align: center;
+    padding: 3rem 2rem;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+  }
+  .impact-stat-card .num {
+    font-family: var(--font-display);
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: var(--gold-light);
+    line-height: 1;
+    margin-bottom: 0.75rem;
+  }
+  .impact-stat-card .label {
+    font-size: 0.82rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: rgba(255,255,255,0.55);
+    margin-bottom: 0.75rem;
+  }
+  .impact-stat-card p {
+    font-size: 0.88rem;
+    color: rgba(255,255,255,0.5);
+    line-height: 1.55;
+  }
+  .impact-comparison {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 2rem;
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .impact-box {
+    padding: 2.5rem;
+    text-align: center;
+  }
+  .impact-box-neg {
+    background: rgba(139, 69, 19, 0.08);
+    border: 1px solid rgba(139, 69, 19, 0.15);
+  }
+  .impact-box-pos {
+    background: rgba(184, 134, 11, 0.08);
+    border: 1px solid rgba(184, 134, 11, 0.15);
+  }
+  .impact-box h4 {
+    font-family: var(--font-display);
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--white);
+    margin-bottom: 0.5rem;
+  }
+  .impact-box .range {
+    font-family: var(--font-display);
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--gold-light);
+    margin-bottom: 0.5rem;
+  }
+  .impact-box p {
+    font-size: 0.85rem;
+    color: rgba(255,255,255,0.5);
+  }
+  .impact-vs {
+    font-family: var(--font-display);
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: rgba(255,255,255,0.3);
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+  }
+
+  /* ── SPONSOR CTA ── */
+  .sponsor-section {
+    background: var(--navy);
+    position: relative;
+    overflow: hidden;
+  }
+  .sponsor-section::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: radial-gradient(ellipse at 70% 50%, rgba(184,134,11,0.05) 0%, transparent 60%);
+  }
+  .sponsor-content {
+    position: relative; z-index: 2;
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  .sponsor-amount {
+    font-family: var(--font-display);
+    font-size: clamp(3.5rem, 6vw, 5rem);
+    font-weight: 700;
+    color: var(--gold-light);
+    line-height: 1;
+    margin-bottom: 1rem;
+  }
+  .sponsor-content h2 {
+    font-family: var(--font-display);
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--white);
+    margin-bottom: 1.5rem;
+    line-height: 1.4;
+  }
+  .sponsor-content p {
+    font-size: 1rem;
+    color: rgba(255,255,255,0.6);
+    line-height: 1.8;
+    margin-bottom: 2.5rem;
+  }
+  .sponsor-includes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+  .sponsor-includes span {
+    font-size: 0.82rem;
+    font-weight: 500;
+    color: rgba(255,255,255,0.55);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 0.75rem;
+    border: 1px solid rgba(255,255,255,0.08);
+  }
+
+  /* ── PARTNER / STRATEGIC ── */
+  .partner-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+  .partner-card {
+    padding: 2.5rem;
+    background: var(--white);
+    border: 1px solid var(--light-gray);
+    transition: var(--transition);
+  }
+  .partner-card:hover { border-color: var(--gold-muted); }
+  .partner-card h4 {
+    font-family: var(--font-display);
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 0.75rem;
+  }
+  .partner-card p {
+    font-size: 0.92rem;
+    color: var(--warm-gray);
+    line-height: 1.7;
+  }
+
+  /* ── TRANSPARENCY ── */
+  .transparency-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  .transparency-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1.5rem;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.06);
+  }
+  .transparency-icon {
+    width: 40px; height: 40px; flex-shrink: 0;
+    display: flex; align-items: center; justify-content: center;
+    border: 1px solid var(--gold-muted);
+    color: var(--gold-light);
+    font-family: var(--font-display);
+    font-size: 1.1rem;
+    font-weight: 700;
+  }
+  .transparency-item h4 {
+    font-family: var(--font-display);
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--white);
+    margin-bottom: 0.35rem;
+  }
+  .transparency-item p {
+    font-size: 0.88rem;
+    color: rgba(255,255,255,0.55);
+    line-height: 1.6;
+  }
+
+  /* ── VISUAL DIRECTION ── */
+  .visual-section {
+    border-top: 1px solid var(--light-gray);
+    padding-top: 4rem;
+    margin-top: 2rem;
+  }
+  .visual-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 2.5rem;
+  }
+  .visual-card {
+    padding: 2rem;
+    border: 1px solid var(--light-gray);
+  }
+  .visual-card h4 {
+    font-family: var(--font-display);
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 1rem;
+  }
+  .visual-card p {
+    font-size: 0.88rem;
+    color: var(--warm-gray);
+    line-height: 1.7;
+  }
+  .color-swatches {
+    display: flex; gap: 0.5rem; margin-top: 1rem;
+  }
+  .swatch {
+    width: 36px; height: 36px; border-radius: 2px;
+    border: 1px solid rgba(0,0,0,0.08);
+  }
+
+  /* ── FOOTER ── */
+  .footer {
+    background: var(--navy-deep);
+    padding: 4rem 2rem 2rem;
+    border-top: 1px solid rgba(184,134,11,0.1);
+  }
+  .footer-inner {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    gap: 3rem;
+  }
+  .footer-brand h3 {
+    font-family: var(--font-display);
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--white);
+    margin-bottom: 1rem;
+  }
+  .footer-brand h3 span { color: var(--gold-light); }
+  .footer-brand p {
+    font-size: 0.88rem;
+    color: rgba(255,255,255,0.45);
+    line-height: 1.7;
+    max-width: 300px;
+  }
+  .footer-col h4 {
+    font-family: var(--font-body);
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: var(--gold-muted);
+    margin-bottom: 1.25rem;
+  }
+  .footer-col a {
+    display: block;
+    font-size: 0.88rem;
+    color: rgba(255,255,255,0.5);
+    text-decoration: none;
+    padding: 0.3rem 0;
+    transition: color var(--transition);
+  }
+  .footer-col a:hover { color: var(--white); }
+  .footer-legal {
+    max-width: var(--max-width);
+    margin: 3rem auto 0;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255,255,255,0.06);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.78rem;
+    color: rgba(255,255,255,0.3);
+  }
+  .footer-legal a {
+    color: rgba(255,255,255,0.3);
+    text-decoration: none;
+  }
+
+  /* ── SEO / EXECUTIVE SECTION ── */
+  .exec-summary {
+    background: var(--white);
+    border: 1px solid var(--light-gray);
+    padding: 3rem;
+    max-width: 800px;
+    margin: 2.5rem 0 0;
+  }
+  .exec-summary h4 {
+    font-family: var(--font-display);
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 1.25rem;
+  }
+  .exec-summary p {
+    font-size: 0.95rem;
+    color: var(--steel);
+    line-height: 1.85;
+    margin-bottom: 1rem;
+  }
+  .tagline-display {
+    font-family: var(--font-display);
+    font-size: 1.6rem;
+    font-weight: 500;
+    font-style: italic;
+    color: var(--navy);
+    margin: 2rem 0;
+    padding-left: 1.5rem;
+    border-left: 3px solid var(--gold);
+  }
+
+  /* ── DIVIDER ── */
+  .section-divider {
+    width: 60px;
+    height: 1px;
+    background: var(--gold);
+    margin: 0 0 2rem;
+  }
+  .section-dark .section-divider { background: var(--gold-muted); }
+
+  /* ── ANIMATIONS ── */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .fade-in {
+    opacity: 0;
+    transform: translateY(16px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  .fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* ── MOBILE ── */
+  @media (max-width: 968px) {
+    .nav-links { display: none; }
+    .nav-mobile-toggle { display: block; }
+    .mission-grid,
+    .program-tiers,
+    .mentorship-layout,
+    .clinical-grid,
+    .impact-hero-stat,
+    .impact-comparison,
+    .partner-grid,
+    .transparency-items,
+    .visual-grid,
+    .sponsor-includes,
+    .footer-inner {
+      grid-template-columns: 1fr;
+    }
+    .impact-comparison { gap: 1rem; }
+    .impact-vs { text-align: center; }
+    .hero-stat-bar-inner { grid-template-columns: repeat(2, 1fr); }
+    .mentorship-roles { grid-template-columns: 1fr 1fr; }
+    .sponsor-includes { grid-template-columns: repeat(2, 1fr); }
+    .footer-inner { grid-template-columns: 1fr 1fr; }
+    .section { padding: 4rem 1.25rem; }
+
+    /* Coalition section tablet */
+    .coalition-block {
+      grid-template-columns: 1fr !important;
+      gap: 2rem !important;
+    }
+    .coalition-identity {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+    .coalition-identity .coalition-logo-wrap {
+      margin-bottom: 0 !important;
+    }
+    .coalition-grid-3 {
+      grid-template-columns: 1fr !important;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .hero-stat-bar-inner { grid-template-columns: 1fr 1fr; }
+    .mentorship-roles { grid-template-columns: 1fr; }
+    .sponsor-includes { grid-template-columns: 1fr; }
+    .footer-inner { grid-template-columns: 1fr; }
+
+    /* Coalition section mobile */
+    .coalition-identity {
+      grid-template-columns: 1fr !important;
+    }
+    .coalition-logo-wrap {
+      min-height: 100px !important;
+      padding: 1.5rem !important;
+    }
+    .coalition-block {
+      margin-bottom: 3rem !important;
+      padding-bottom: 3rem !important;
+    }
+    /* Donor conversion grid */
+    .coalition-grid-3 {
+      grid-template-columns: 1fr !important;
+    }
+    /* Visual section grids */
+    .visual-section > div[style*="grid-template-columns: repeat(3"] {
+      display: block !important;
+    }
+    /* Hero adjustments */
+    .hero h1 { font-size: 2.2rem; }
+    .hero-sub { font-size: 1rem; }
+    .hero-actions { flex-direction: column; align-items: flex-start; }
+    .btn-primary, .btn-outline { width: 100%; justify-content: center; }
+    /* Section title */
+    .section-title { font-size: 1.7rem; }
+    /* Impact stat cards */
+    .impact-stat-card .num { font-size: 2rem; }
+    /* Sponsor amount */
+    .sponsor-amount { font-size: 3rem; }
+    /* Mentorship quote */
+    .mentorship-quote { font-size: 1.3rem; padding-left: 1.2rem; }
+    /* Nav mobile open state */
+    .nav-links.open {
+      display: flex !important;
+      flex-direction: column;
+      position: fixed;
+      top: 72px; left: 0; right: 0;
+      background: rgba(11, 29, 51, 0.98);
+      padding: 1.5rem 2rem;
+      gap: 1.25rem;
+      z-index: 999;
+      border-bottom: 1px solid rgba(184,134,11,0.15);
+    }
+  }
+
+  /* ── PAGE LABEL (for prototype) ── */
+  .page-label {
+    display: inline-block;
+    font-family: var(--font-body);
+    font-size: 0.65rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: var(--white);
+    background: var(--gold);
+    padding: 0.3rem 0.8rem;
+    margin-bottom: 2rem;
+  }
+  .section-warm .page-label {
+    background: var(--navy);
+  }
+</style>
+</head>
+<body>
+
+<!-- ════════════════════════════════════════════ -->
+<!-- NAVIGATION                                   -->
+<!-- ════════════════════════════════════════════ -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="#hero" class="nav-logo">Veterans <span>Bridge</span> International</a>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#program">The Program</a>
+      <a href="#mentorship">Mentorship</a>
+      <a href="#impact">Impact</a>
+      <a href="#coalition">Partners</a>
+      <a href="#partner">Engage</a>
+      <a href="#sponsor" class="nav-cta">Sponsor a Veteran</a>
+    </div>
+    <button class="nav-mobile-toggle" aria-label="Menu" onclick="var nl=document.querySelector('.nav-links');nl.classList.toggle('open');nl.style.display=nl.classList.contains('open')?'flex':'none'">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ════════════════════════════════════════════ -->
+<!-- HERO — HOMEPAGE                              -->
+<!-- ════════════════════════════════════════════ -->
+<section class="hero" id="hero">
+  <div class="hero-content">
+    <div class="hero-eyebrow">A 501(c)(3) Veteran Recovery Initiative</div>
+    <h1>Recovery begins when purpose returns.</h1>
+    <p class="hero-sub">
+      Veterans Bridge International brings together Ukrainian veterans, their families, and U.S. veteran mentors in a structured rehabilitation program — transforming trauma into leadership, connection, and renewed service.
+    </p>
+    <div class="hero-actions">
+      <a href="#sponsor" class="btn-primary">Sponsor a Veteran — $2,500</a>
+      <a href="#program" class="btn-outline">Explore the Program</a>
+    </div>
+  </div>
+  <div class="hero-stat-bar">
+    <div class="hero-stat-bar-inner">
+      <div class="hero-stat">
+        <div class="hero-stat-num">14</div>
+        <div class="hero-stat-label">Day Cohort Program</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-num">20+</div>
+        <div class="hero-stat-label">Soldiers per Cohort</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-num">$2,500</div>
+        <div class="hero-stat-label">Per Veteran Sponsorship</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-num">3</div>
+        <div class="hero-stat-label">Nations. One Mission.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════ -->
+<!-- VIDEO                                        -->
+<!-- ════════════════════════════════════════════ -->
+<section style="background: var(--navy-deep); padding: 4rem 2rem 5rem;">
+  <div style="max-width: 900px; margin: 0 auto; text-align: center;">
+    <p style="font-family: var(--font-body); font-size: 0.72rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.25em; color: var(--gold-muted); margin-bottom: 1.5rem;">Watch Our Story</p>
+    <div style="position: relative; padding-top: 43.08%; height: 0; overflow: hidden; border: 1px solid rgba(184,134,11,0.2); box-shadow: 0 20px 60px rgba(0,0,0,0.5); background: #000; width: 100%;">
+      <iframe src="https://player.vimeo.com/video/1167461604?badge=0&autopause=0&player_id=0&app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" title="VBI R3"></iframe>
+    </div>
+  </div>
+</section>
+<script src="https://player.vimeo.com/api/player.js"></script>
+
+<!-- ════════════════════════════════════════════ -->
+<!-- ABOUT — PAGE 2                               -->
+<!-- ════════════════════════════════════════════ -->
+<section class="section section-warm" id="about">
+  <div class="section-inner">
+    <span class="page-label">About</span>
+    <div class="section-eyebrow">Who We Are</div>
+    <div class="section-divider"></div>
+    <div class="mission-grid fade-in">
+      <div class="mission-text">
+        <h2 class="section-title">A veteran-to-veteran recovery movement built on structure, evidence, and shared purpose.</h2>
+        <p>
+          Veterans Bridge International is a 501(c)(3) nonprofit that delivers structured rehabilitation and mentorship to veterans affected by the war in Ukraine. Our programs are hosted at the Sunrise Rehabilitation Center in Bulgaria, where Ukrainian veterans and their families receive two-week intensive recovery alongside U.S. veteran mentors.
+        </p>
+        <p>
+          We exist because two crises overlap: Ukrainian veterans face an escalating PTSD burden with limited treatment infrastructure. American veterans — decades beyond their own service — often carry unresolved loss of purpose. VBI addresses both through a single model: recovery for one, renewed mission for the other.
+        </p>
+        <p>
+          This is not charity tourism. It is not talk therapy at scale. It is a structured, replicable system that produces measurable outcomes and lays the foundation for a cross-border veteran rehabilitation network.
+        </p>
+
+        <div class="tagline-display">
+          "Where recovery meets renewed purpose."
+        </div>
+      </div>
+      <div class="mission-pillars">
+        <div class="pillar-card">
+          <h4>Veterans Bridge International</h4>
+          <p>The 501(c)(3) nonprofit entity. Manages fundraising, donor relations, mentorship recruitment, and program oversight. Based in the United States.</p>
+        </div>
+        <div class="pillar-card">
+          <h4>Sunrise Rehabilitation Center — Bulgaria</h4>
+          <p>The operational platform. An EU-jurisdiction facility providing the clinical, residential, and therapeutic infrastructure for each cohort. Active now.</p>
+        </div>
+        <div class="pillar-card">
+          <h4>Future Ukraine Network</h4>
+          <p>The long-term goal. A scalable national rehabilitation infrastructure within Ukraine, built on the model and evidence developed in Bulgaria.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Executive Summary & Tagline -->
+    <div class="exec-summary fade-in">
+      <h4>Executive Summary</h4>
+      <p>
+        Veterans Bridge International is a 501(c)(3) nonprofit delivering structured, two-week rehabilitation cohorts for Ukrainian veterans and their families at the Sunrise Rehabilitation Center in Bulgaria. Each cohort integrates trauma-informed therapy, physical rehabilitation, family reintegration, and the participation of U.S. veteran mentors — creating a dual-benefit model where Ukrainian veterans receive recovery support and American mentors regain a sense of mission. At $2,500 per veteran, the program offers a cost-effective alternative to the estimated $800K–$1.2M lifetime burden of untreated severe PTSD. VBI operates within EU jurisdiction, maintains transparent governance, and is building toward a scalable rehabilitation network that extends into Ukraine. The model strengthens cross-border alliance, produces measurable clinical outcomes, and demonstrates that veteran recovery is a strategic investment, not an expense.
+      </p>
+    </div>
+
+    <!-- 60-Word Mission -->
+    <div style="margin-top: 2.5rem; max-width: 700px;" class="fade-in">
+      <div class="section-eyebrow">Mission Statement — 60 Words</div>
+      <p style="font-family: var(--font-display); font-size: 1.2rem; line-height: 1.7; color: var(--navy); font-weight: 500;">
+        Veterans Bridge International restores lives through structured rehabilitation and purpose-driven mentorship. At the Sunrise Rehabilitation Center in Bulgaria, we bring together Ukrainian veterans, their families, and U.S. veteran mentors in a shared recovery environment. Trauma becomes leadership. Isolation becomes connection. Loss of purpose becomes renewed service. This is not simply rehabilitation. It is recovery through purpose.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════ -->
+<!-- THE PROGRAM — PAGE 3                         -->
+<!-- ════════════════════════════════════════════ -->
+<section class="section" id="program">
+  <div class="section-inner">
+    <span class="page-label section-warm">The Program</span>
+    <div class="section-eyebrow">Program Model</div>
+    <div class="section-divider"></div>
+    <h2 class="section-title">Two tiers. One continuum of recovery.</h2>
+    <p class="section-lead">
+      Each cohort operates on a 14-day cycle, serving 20 soldiers and accompanying family units at the Sunrise Rehabilitation Center in Bulgaria. The program layers foundational recovery with cross-border mentorship to create lasting change.
+    </p>
+
+    <div class="program-tiers fade-in">
+      <div class="tier-card">
+        <div class="tier-label">Tier 1</div>
+        <h3>Foundational Recovery</h3>
+        <p>
+          A comprehensive two-week residential program addressing the full spectrum of post-combat recovery. Delivered in Bulgaria within a stable EU regulatory environment, with consistent clinical protocols and safe retreat conditions.
+        </p>
+        <ul class="tier-features">
+          <li>Trauma-informed individual and group therapy</li>
+          <li>Family reintegration counseling</li>
+          <li>Physical rehabilitation and mobility recovery</li>
+          <li>Mind-body resilience training</li>
+          <li>Structured peer support groups</li>
+          <li>Nutrition, sleep, and wellness programming</li>
+          <li>Safe, structured retreat environment</li>
+        </ul>
+        <p style="margin-top: 1.5rem; font-size: 0.88rem; color: var(--warm-gray);">
+          <strong style="color: var(--navy);">Why Bulgaria:</strong> EU jurisdiction ensures regulatory stability. Geographic proximity to Ukraine enables accessible travel. Operating costs allow high-quality programming at sustainable price points.
+        </p>
+      </div>
+      <div class="tier-card">
+        <div class="tier-label">Tier 2</div>
+        <h3>Purpose Through Mentorship</h3>
+        <p>
+          Each cohort includes U.S. veteran mentors who have navigated their own recovery. They serve not as therapists, but as peers — demonstrating that post-service life can carry meaning, structure, and purpose.
+        </p>
+        <ul class="tier-features">
+          <li>Structured personal storytelling workshops</li>
+          <li>Trauma navigation and peer guidance</li>
+          <li>Civilian reintegration coaching</li>
+          <li>Peer modeling and relationship building</li>
+          <li>Leadership development workshops</li>
+        </ul>
+        <p style="margin-top: 1.5rem; font-size: 0.88rem; color: var(--warm-gray);">
+          <strong style="color: var(--navy);">Key insight:</strong> Mentoring is itself therapeutic. U.S. veterans who serve as mentors report renewed sense of purpose, reduced isolation, and measurable improvement in their own recovery outcomes. Service after service.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════ -->
+<!-- PURPOSE THROUGH MENTORSHIP — PAGE 4          -->
+<!-- ════════════════════════════════════════════ -->
+<section class="section section-dark" id="mentorship">
+  <div class="section-inner">
+    <span class="page-label">Purpose Through Mentorship</span>
+    <div class="section-eyebrow">The Differentiator</div>
+    <div class="section-divider"></div>
+
+    <div class="mentorship-layout fade-in">
+      <div>
+        <div class="mentorship-quote">
+          "The most powerful rehabilitation happens when someone who has walked the same road stands beside you — not as a clinician, but as proof that the road continues."
+        </div>
+        <div class="mentorship-body">
+          <p>
+            Purpose Through Mentorship is the defining element of VBI. It is what separates this program from conventional rehabilitation: every cohort pairs Ukrainian veterans in active recovery with U.S. veterans who have lived through their own post-service transition.
+          </p>
+          <p>
+            The mentors are not therapists. They are not consultants. They are veterans who have carried similar weight and found a way forward — and whose presence in the room changes what recovery feels possible.
+          </p>
+          <p>
+            This model addresses three intersecting crises simultaneously: the acute PTSD burden facing Ukrainian veterans, the epidemic of purposelessness among post-service American veterans, and the strategic need for cross-border alliance solidarity between the U.S. and Ukraine.
+          </p>
+        </div>
+      </div>
+      <div>
+        <h3 style="font-family: var(--font-display); font-size: 1.3rem; font-weight: 600; color: var(--gold-light); margin-bottom: 1.5rem;">Mentor Roles</h3>
+        <div class="mentorship-roles">
+          <div class="role-item">
+            <h4>Storytelling</h4>
+            <p>Structured sharing of personal recovery narratives</p>
+          </div>
+          <div class="role-item">
+            <h4>Navigation</h4>
+            <p>Guidance through trauma processing and emotional terrain</p>
+          </div>
+          <div class="role-item">
+            <h4>Coaching</h4>
+            <p>Reintegration planning for civilian life and identity</p>
+          </div>
+          <div class="role-item">
+            <h4>Leadership</h4>
+            <p>Workshops on post-service purpose and community building</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════ -->
+<!-- STRATEGIC PARTNERS — COALITION IN ACTION     -->
+<!-- ════════════════════════════════════════════ -->
+<section class="section section-warm" id="coalition">
+  <div class="section-inner">
+    <span class="page-label">Our Coalition</span>
+    <div class="section-eyebrow">Trusted Partners in Recovery</div>
+    <div class="section-divider"></div>
+    <h2 class="section-title">Built on proven organizations with boots on the ground.</h2>
+    <p class="section-lead">
+      VBI does not operate in isolation. Our program is built on deep, operational partnerships with organizations that have already delivered recovery at scale — bringing clinical credibility, cultural knowledge, and direct access to Ukrainian veterans and their families.
+    </p>
+
+    <!-- UAH Partner Block -->
+    <div class="coalition-block fade-in" style="display: grid; grid-template-columns: 1fr 1.6fr; gap: 4rem; align-items: start; margin-bottom: 5rem; padding-bottom: 5rem; border-bottom: 1px solid var(--light-gray);">
+      <div class="coalition-identity">
+        <div class="coalition-logo-wrap" style="background: var(--white); border: 1px solid var(--light-gray); padding: 2.5rem; margin-bottom: 2rem; display: flex; align-items: center; justify-content: center; min-height: 140px;">
+          <a href="https://www.ukrainianaction.com/recovery/ukrainian-action-heroes" target="_blank" rel="noopener noreferrer" style="display: flex; flex-direction: column; align-items: center; gap: 0.75rem; text-decoration: none;">
+            <!-- Ukrainian flag colors badge -->
+            <div style="display: flex; flex-direction: column; width: 60px; height: 40px; border: 2px solid var(--light-gray); overflow: hidden; border-radius: 2px; flex-shrink: 0;">
+              <div style="flex: 1; background: #005BBB;"></div>
+              <div style="flex: 1; background: #FFD500;"></div>
+            </div>
+            <div style="text-align: center;">
+              <div style="font-family: var(--font-display); font-size: 1.25rem; font-weight: 700; color: var(--navy); line-height: 1.2;">Ukrainian Action Heroes</div>
+              <div style="font-family: var(--font-body); font-size: 0.72rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.18em; color: var(--gold); margin-top: 0.3rem;">by Ukrainian Action</div>
+            </div>
+          </a>
+        </div>
+        <div style="padding: 1.5rem; background: var(--navy-deep); border-left: 3px solid var(--gold);">
+          <div style="font-family: var(--font-body); font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.2em; color: var(--gold-muted); margin-bottom: 0.4rem;">Program Reach</div>
+          <div style="font-family: var(--font-display); font-size: 2rem; font-weight: 700; color: var(--white); line-height: 1;">180+</div>
+          <div style="font-size: 0.85rem; color: rgba(255,255,255,0.55); margin-top: 0.25rem;">veterans supported since 2024</div>
+        </div>
+      </div>
+      <div class="coalition-content">
+        <div style="font-family: var(--font-body); font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.2em; color: var(--gold); margin-bottom: 1rem;">Clinical & Cultural Partner</div>
+        <h3 style="font-family: var(--font-display); font-size: 1.7rem; font-weight: 600; color: var(--navy); margin-bottom: 1.25rem; line-height: 1.25;">A pioneering rehabilitation program for Ukrainian veterans — with 180+ heroes served.</h3>
+        <p style="font-size: 1rem; line-height: 1.85; color: var(--steel); margin-bottom: 1.25rem;">
+          Ukrainian Action Heroes is one of the first dedicated organizations delivering structured PTSD recovery programming directly to Ukrainian veterans. Their program brings injured soldiers to rehabilitation environments where expert psychologists, group therapy, adaptive sports, and mindfulness activities combine into a clinically grounded recovery experience.
+        </p>
+        <p style="font-size: 1rem; line-height: 1.85; color: var(--steel); margin-bottom: 1.5rem;">
+          Their track record — including expanded adaptive programming for veterans with amputations launched in 2025 — provides VBI with a proven clinical foundation, deep cultural fluency with Ukrainian soldiers, and a trusted referral network that ensures every cohort is filled with veterans who are genuinely ready for recovery.
+        </p>
+        <div class="coalition-grid-3" style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1rem; margin-bottom: 2rem;">
+          <div style="padding: 1.25rem; background: var(--white); border: 1px solid var(--light-gray); text-align: center;">
+            <div style="font-family: var(--font-display); font-size: 1.1rem; font-weight: 700; color: var(--navy); margin-bottom: 0.25rem;">Clinical Depth</div>
+            <div style="font-size: 0.82rem; color: var(--warm-gray);">Qualified psychologists embedded in every cohort</div>
+          </div>
+          <div style="padding: 1.25rem; background: var(--white); border: 1px solid var(--light-gray); text-align: center;">
+            <div style="font-family: var(--font-display); font-size: 1.1rem; font-weight: 700; color: var(--navy); margin-bottom: 0.25rem;">Adaptive Care</div>
+            <div style="font-size: 0.82rem; color: var(--warm-gray);">Programming extended to veterans with amputations</div>
+          </div>
+          <div style="padding: 1.25rem; background: var(--white); border: 1px solid var(--light-gray); text-align: center;">
+            <div style="font-family: var(--font-display); font-size: 1.1rem; font-weight: 700; color: var(--navy); margin-bottom: 0.25rem;">Family-Inclusive</div>
+            <div style="font-size: 0.82rem; color: var(--warm-gray);">Holistic recovery for soldiers and their families</div>
+          </div>
+        </div>
+        <a href="https://www.ukrainianaction.com/recovery/ukrainian-action-heroes" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 0.5rem; font-family: var(--font-body); font-size: 0.82rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(184,134,11,0.3); padding-bottom: 2px; transition: color 0.3s ease;">
+          Learn About Ukrainian Action Heroes →
+        </a>
+      </div>
+    </div>
+
+    <!-- Ed's Friends Partner Block -->
+    <div class="coalition-block fade-in" style="display: grid; grid-template-columns: 1fr 1.6fr; gap: 4rem; align-items: start;">
+      <div class="coalition-identity">
+        <div class="coalition-logo-wrap" style="background: var(--white); border: 1px solid var(--light-gray); padding: 2.5rem; margin-bottom: 2rem; display: flex; align-items: center; justify-content: center; min-height: 140px;">
+          <a href="https://edsfriends.org" target="_blank" rel="noopener noreferrer" style="display: flex; flex-direction: column; align-items: center; gap: 0.75rem; text-decoration: none;">
+            <div style="width: 52px; height: 52px; background: var(--navy); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#D4A843" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+            </div>
+            <div style="text-align: center;">
+              <div style="font-family: var(--font-display); font-size: 1.25rem; font-weight: 700; color: var(--navy); line-height: 1.2;">Ed's Friends</div>
+              <div style="font-family: var(--font-body); font-size: 0.72rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.18em; color: var(--gold); margin-top: 0.3rem;">Ukraine Relief</div>
+            </div>
+          </a>
+        </div>
+        <div style="padding: 1.5rem; background: var(--navy-deep); border-left: 3px solid var(--gold);">
+          <div style="font-family: var(--font-body); font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.2em; color: var(--gold-muted); margin-bottom: 0.4rem;">Founded</div>
+          <div style="font-family: var(--font-display); font-size: 2rem; font-weight: 700; color: var(--white); line-height: 1;">2022</div>
+          <div style="font-size: 0.85rem; color: rgba(255,255,255,0.55); margin-top: 0.25rem;">501(c)(3) — EIN 88-2081552</div>
+        </div>
+      </div>
+      <div class="coalition-content">
+        <div style="font-family: var(--font-body); font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.2em; color: var(--gold); margin-bottom: 1rem;">Humanitarian & Field Partner</div>
+        <h3 style="font-family: var(--font-display); font-size: 1.7rem; font-weight: 600; color: var(--navy); margin-bottom: 1.25rem; line-height: 1.25;">Rapid, targeted aid delivered by people with deep personal ties to Ukraine.</h3>
+        <p style="font-size: 1rem; line-height: 1.85; color: var(--steel); margin-bottom: 1.25rem;">
+          Ed's Friends was founded by Ed Ma — a former U.S. Peace Corps Volunteer who lived and served in Ukraine — in direct response to Russia's invasion in February 2022. The organization operates as a lean volunteer team with an established network spanning Ukraine, the United States, and beyond, enabling rapid delivery of humanitarian supplies and medical assistance where it is needed most.
+        </p>
+        <p style="font-size: 1rem; line-height: 1.85; color: var(--steel); margin-bottom: 1.5rem;">
+          Their approach is grounded in accountability: small, tightly-knit operations that connect donors directly to recipients with speed and specificity. No bureaucracy. No dilution. Their network brings VBI direct access to the Ukrainian humanitarian ecosystem and the credibility of an organization that has already been working on the ground since day one of the conflict.
+        </p>
+        <div style="background: rgba(184,134,11,0.05); border: 1px solid rgba(184,134,11,0.15); padding: 1.5rem; margin-bottom: 2rem;">
+          <p style="font-family: var(--font-display); font-size: 1.1rem; font-style: italic; color: var(--navy); line-height: 1.6; margin: 0;">
+            "We know that awful feeling of watching the horrors happening in Ukraine and being helpless to do anything about them. That feeling is exactly what inspired us."
+          </p>
+          <div style="margin-top: 0.75rem; font-size: 0.82rem; color: var(--warm-gray); font-weight: 500;">— Ed Ma, Founder & Executive Director, Ed's Friends</div>
+        </div>
+        <a href="https://edsfriends.org" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 0.5rem; font-family: var(--font-body); font-size: 0.82rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(184,134,11,0.3); padding-bottom: 2px; transition: color 0.3s ease;">
+          Learn About Ed's Friends →
+        </a>
+      </div>
+    </div>
+
+    <!-- Coalition Statement -->
+    <div class="fade-in" style="margin-top: 4rem; padding: 3rem; background: var(--navy-deep); text-align: center;">
+      <div style="font-family: var(--font-body); font-size: 0.72rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.25em; color: var(--gold-muted); margin-bottom: 1.5rem;">The Coalition Advantage</div>
+      <p style="font-family: var(--font-display); font-size: 1.5rem; font-weight: 400; font-style: italic; color: var(--white); max-width: 800px; margin: 0 auto 1.5rem; line-height: 1.5;">
+        Together, Ukrainian Action Heroes and Ed's Friends bring VBI what no single organization can build alone: clinical expertise, cultural trust, humanitarian reach, and a direct network of veterans who need exactly what we offer.
+      </p>
+      <p style="font-size: 0.92rem; color: rgba(255,255,255,0.5); max-width: 620px; margin: 0 auto;">
+        This coalition is not incidental. It is the foundation of our operational credibility — and it is why every dollar donated to VBI lands with precision.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════ -->
+<!-- CLINICAL INNOVATION — PAGE 5                 -->
+<!-- ════════════════════════════════════════════ -->
+<section class="section section-warm" id="clinical">
+  <div class="section-inner">
+    <span class="page-label">Clinical Innovation</span>
+    <div class="section-eyebrow">Advanced Modalities</div>
+    <div class="section-divider"></div>
+    <h2 class="section-title">Evidence-informed pathways for treatment-resistant trauma.</h2>
+    <p class="section-lead">
+      For veterans whose trauma has not responded to conventional intervention, VBI partners with EU-based medical teams to facilitate access to legally supervised advanced therapies. These modalities are positioned within established clinical and regulatory frameworks.
+    </p>
+
+    <div class="clinical-notice fade-in">
+      <strong>Regulatory note:</strong> All advanced modalities are delivered under EU clinical supervision within jurisdictions where they are legally authorized or decriminalized for medical use. VBI does not operate outside established legal frameworks. Bulgaria remains the primary rehabilitation platform; Portugal serves as the clinical innovation partner for advanced treatment.
+    </div>
+
+    <div class="clinical-grid fade-in">
+      <div class="clinical-card">
+        <h4>MDMA-Assisted Therapy</h4>
+        <div class="status">Late-Stage Clinical Trials</div>
+        <p>Facilitated sessions under medical supervision within EU clinical trial frameworks. Significant evidence base for treatment-resistant PTSD. Delivered through partner medical teams.</p>
+      </div>
+      <div class="clinical-card">
+        <h4>Psilocybin-Assisted Therapy</h4>
+        <div class="status">Legal Clinical Frameworks — NL / PT</div>
+        <p>Administered within legal clinical contexts in the Netherlands and Portugal. Emerging evidence for trauma processing and depression. Conducted under psychiatric oversight.</p>
+      </div>
+      <div class="clinical-card">
+        <h4>Ketamine-Assisted Therapy</h4>
+        <div class="status">EU Clinical Use — Established</div>
+        <p>An established clinical modality with a well-documented evidence base. Administered in medical settings for treatment-resistant depression and trauma-related conditions.</p>
+      </div>
+      <div class="clinical-card">
+        <h4>Ibogaine-Assisted Therapy</h4>
+        <div class="status">Decriminalized Medical Context — PT</div>
+        <p>Available within Portugal's decriminalized medical framework. Emerging research in addiction and trauma. Delivered with full cardiac monitoring and medical supervision.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════ -->
+<!-- IMPACT & FINANCIAL MODEL — PAGE 6            -->
+<!-- ════════════════════════════════════════════ -->
+<section class="section section-dark" id="impact">
+  <div class="section-inner">
+    <span class="page-label">Impact & Financial Model</span>
+    <div class="section-eyebrow">The Case for Investment</div>
+    <div class="section-divider"></div>
+    <h2 class="section-title" style="color: var(--white);">Veteran recovery is cost containment and national resilience infrastructure.</h2>
+    <p class="section-lead">
+      The financial argument for early intervention in veteran PTSD is unambiguous. The cost of inaction — in human terms and in economic terms — far exceeds the cost of structured rehabilitation.
+    </p>
+
+    <div class="impact-hero-stat fade-in">
+      <div class="impact-stat-card">
+        <div class="num">$2,500</div>
+        <div class="label">Per Veteran</div>
+        <p>Full two-week program including therapy, lodging, meals, transportation, programming, and mentor integration.</p>
+      </div>
+      <div class="impact-stat-card">
+        <div class="num">$800K–$1.2M</div>
+        <div class="label">Lifetime Cost</div>
+        <p>Estimated economic burden of untreated severe PTSD per veteran: healthcare, lost productivity, incarceration, family disruption.</p>
+      </div>
+      <div class="impact-stat-card">
+        <div class="num">+$500K–$1M</div>
+        <div class="label">Economic Contribution</div>
+        <p>Estimated lifetime economic contribution of a rehabilitated veteran who returns to productive civilian or military life.</p>
+      </div>
+    </div>
+
+    <div class="impact-comparison fade-in">
+      <div class="impact-box impact-box-neg">
+        <h4>Without Intervention</h4>
+        <div class="range">$800K–$1.2M</div>
+        <p>Lifetime cost per untreated veteran</p>
+      </div>
+      <div class="impact-vs">vs.</div>
+      <div class="impact-box impact-box-pos">
+        <h4>With VBI</h4>
+        <div class="range">$2,500</div>
+        <p>Full cohort rehabilitation cost per veteran</p>
+      </div>
+    </div>
+
+    <div style="margin-top: 4rem; max-width: 700px;" class="fade-in">
+      <h3 style="font-family: var(--font-display); font-size: 1.4rem; font-weight: 600; color: var(--white); margin-bottom: 1.25rem;">Diplomatic & Strategic Value</h3>
+      <p style="font-size: 1rem; color: rgba(255,255,255,0.65); line-height: 1.85; margin-bottom: 1rem;">
+        VBI is not only a humanitarian initiative. It is a strategic instrument that strengthens the U.S.–Ukraine alliance through reciprocal service, builds long-term cross-border resilience networks, and creates a scalable EU–Ukraine recovery model that can be replicated across future conflict zones.
+      </p>
+      <p style="font-size: 1rem; color: rgba(255,255,255,0.65); line-height: 1.85;">
+        When American veterans serve as mentors to Ukrainian veterans, it is an act of alliance — not just of charity. This distinction matters to policymakers, to military leadership, and to the veterans themselves.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════ -->
+<!-- SPONSOR A VETERAN — PAGE 7                   -->
+<!-- ════════════════════════════════════════════ -->
+<section class="section sponsor-section" id="sponsor">
+  <div class="section-inner">
+    <div class="sponsor-content fade-in">
+      <span class="page-label">Sponsor a Veteran</span>
+      <div class="section-eyebrow" style="text-align: center;">Direct Impact</div>
+      <div class="sponsor-amount">$2,500</div>
+      <h2>One sponsorship. One veteran. Fourteen days that change the trajectory of a life.</h2>
+      <p>
+        Your $2,500 sponsorship funds one Ukrainian soldier or family unit through a complete two-week rehabilitation cohort at the Sunrise Rehabilitation Center in Bulgaria. Every dollar is accounted for. Every outcome is measured. Every veteran is named — not a statistic.
+      </p>
+      <div class="sponsor-includes">
+        <span>Therapy</span>
+        <span>Lodging</span>
+        <span>Meals</span>
+        <span>Transportation</span>
+        <span>Programming</span>
+        <span>Mentor Integration</span>
+      </div>
+      <a href="#" class="btn-primary" style="font-size: 1rem; padding: 1.2rem 3rem;">Sponsor a Veteran Now</a>
+      <p style="margin-top: 2rem; font-size: 0.85rem; color: rgba(255,255,255,0.4);">
+        Veterans Bridge International is a registered 501(c)(3) organization. All donations are tax-deductible to the extent permitted by law.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════ -->
+<!-- PARTNER WITH US — PAGE 8                     -->
+<!-- ════════════════════════════════════════════ -->
+<section class="section" id="partner">
+  <div class="section-inner">
+    <span class="page-label section-warm">Partner With Us</span>
+    <div class="section-eyebrow">Institutional Engagement</div>
+    <div class="section-divider"></div>
+    <h2 class="section-title">We work with governments, foundations, corporations, and veteran communities.</h2>
+    <p class="section-lead">
+      VBI is built for scale and for institutional partnership. Whether you represent a foundation, a government agency, a corporate CSR program, or a veteran service organization, there is a clear pathway to engagement.
+    </p>
+
+    <div class="partner-grid fade-in">
+      <div class="partner-card">
+        <h4>Foundation Partners</h4>
+        <p>Fund full cohorts, sponsor clinical innovation research, or support capacity-building for the Ukraine expansion. VBI provides granular reporting, impact metrics, and full financial transparency for every grant dollar.</p>
+      </div>
+      <div class="partner-card">
+        <h4>Government & Policy</h4>
+        <p>Engage with VBI as a model for cross-border veteran rehabilitation infrastructure. We are structured to brief legislative bodies, defense agencies, and international organizations on scalable recovery frameworks.</p>
+      </div>
+      <div class="partner-card">
+        <h4>Corporate Sponsors</h4>
+        <p>Align your brand with a credible, measured veteran recovery initiative. Named cohort sponsorships, employee mentorship participation, and co-branded impact reporting are available.</p>
+      </div>
+      <div class="partner-card">
+        <h4>Veteran Organizations</h4>
+        <p>Partner on mentor recruitment, program referrals, and shared research. VBI is designed to complement existing VSO infrastructure — not compete with it.</p>
+      </div>
+      <div class="partner-card">
+        <h4>Clinical & Research</h4>
+        <p>Collaborate on outcome measurement, clinical protocol development, and advanced treatment research. We are committed to evidence-based practice and peer-reviewed accountability.</p>
+      </div>
+      <div class="partner-card">
+        <h4>Media & Storytelling</h4>
+        <p>Ethical, consent-based access to program participants and outcomes for documentary, journalism, and institutional storytelling. No exploitation. No spectacle. The stories speak for themselves.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════ -->
+<!-- TRANSPARENCY & GOVERNANCE — PAGE 9           -->
+<!-- ════════════════════════════════════════════ -->
+<section class="section section-dark" id="transparency">
+  <div class="section-inner">
+    <span class="page-label">Transparency & Governance</span>
+    <div class="section-eyebrow">Accountability</div>
+    <div class="section-divider"></div>
+    <h2 class="section-title" style="color: var(--white);">Built for scrutiny. Designed for trust.</h2>
+    <p class="section-lead">
+      VBI operates with the governance standards expected of institutions that brief Congress, work with NATO-aligned partners, and receive foundation funding. Transparency is not an aspiration. It is an operational requirement.
+    </p>
+
+    <div class="transparency-items fade-in">
+      <div class="transparency-item">
+        <div class="transparency-icon">01</div>
+        <div>
+          <h4>501(c)(3) Registration</h4>
+          <p>Fully registered U.S. nonprofit with IRS determination letter. All donations are tax-deductible. EIN available on request.</p>
+        </div>
+      </div>
+      <div class="transparency-item">
+        <div class="transparency-icon">02</div>
+        <div>
+          <h4>Financial Reporting</h4>
+          <p>Annual audited financials, Form 990 public disclosure, and per-cohort cost breakdowns available to donors and partners.</p>
+        </div>
+      </div>
+      <div class="transparency-item">
+        <div class="transparency-icon">03</div>
+        <div>
+          <h4>Clinical Oversight</h4>
+          <p>All therapeutic programming operates under licensed clinical supervision. Protocols are documented and subject to external review.</p>
+        </div>
+      </div>
+      <div class="transparency-item">
+        <div class="transparency-icon">04</div>
+        <div>
+          <h4>Outcome Measurement</h4>
+          <p>Pre- and post-cohort assessment using standardized PTSD and wellbeing instruments. Data collected with participant consent and anonymized for reporting.</p>
+        </div>
+      </div>
+      <div class="transparency-item">
+        <div class="transparency-icon">05</div>
+        <div>
+          <h4>Board Governance</h4>
+          <p>Independent board of directors with relevant expertise in veteran affairs, nonprofit management, clinical practice, and international operations.</p>
+        </div>
+      </div>
+      <div class="transparency-item">
+        <div class="transparency-icon">06</div>
+        <div>
+          <h4>Ethical Standards</h4>
+          <p>Strict consent protocols for participant data and storytelling. No exploitation of trauma for fundraising. No political affiliation or advocacy.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════ -->
+<!-- VISUAL DIRECTION & SEO — PAGE 10             -->
+<!-- ════════════════════════════════════════════ -->
+<section class="section section-warm" id="visual-direction">
+  <div class="section-inner">
+    <span class="page-label">Site Design Reference</span>
+    <div class="section-eyebrow">Visual Direction & SEO Strategy</div>
+    <div class="section-divider"></div>
+    <h2 class="section-title">Suggested visual identity, photography, and search optimization.</h2>
+
+    <div class="visual-grid fade-in">
+      <div class="visual-card">
+        <h4>Photography Style</h4>
+        <p>
+          Documentary realism. Natural light. No staged heroics. Candid moments of connection between veterans — hands on shoulders, shared meals, quiet conversation. Desaturated palette with warm undertones. Faces visible but not performative. The visual language should evoke trust and gravity, not sentimentality.
+        </p>
+      </div>
+      <div class="visual-card">
+        <h4>Color Palette</h4>
+        <p>
+          Deep navy as institutional anchor. Muted gold for warmth and authority. Steel gray for body text and secondary elements. Off-white and cream backgrounds to avoid clinical coldness. No bright or playful colors. No gradients that suggest tech or wellness brands.
+        </p>
+        <div class="color-swatches">
+          <div class="swatch" style="background: #0B1D33;" title="Navy"></div>
+          <div class="swatch" style="background: #B8860B;" title="Gold"></div>
+          <div class="swatch" style="background: #4A5568;" title="Steel"></div>
+          <div class="swatch" style="background: #F7F6F3;" title="Off-White"></div>
+          <div class="swatch" style="background: #2C3E50;" title="Slate"></div>
+          <div class="swatch" style="background: #8B4513;" title="Rust Accent"></div>
+        </div>
+      </div>
+      <div class="visual-card">
+        <h4>Typography</h4>
+        <p>
+          Serif display font (Cormorant Garamond or similar) for headings to signal institutional gravitas. Clean sans-serif (Source Sans 3 or similar) for body text. Generous line height. Restrained use of all-caps for labels and eyebrows only. No decorative or trendy typefaces.
+        </p>
+      </div>
+    </div>
+
+    <div class="visual-section fade-in">
+      <h3 style="font-family: var(--font-display); font-size: 1.4rem; font-weight: 600; color: var(--navy); margin-bottom: 1rem;">Donor Conversion Strategy</h3>
+      <p style="font-size: 0.95rem; color: var(--steel); line-height: 1.85; max-width: 700px; margin-bottom: 1.5rem;">
+        The $2,500 sponsorship is positioned as a specific, tangible, complete unit of impact — not a vague donation. Every touchpoint reinforces three conversion principles:
+      </p>
+      <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem;">
+        <div style="padding: 1.5rem; border: 1px solid var(--light-gray); background: var(--white);">
+          <h4 style="font-family: var(--font-display); font-size: 1.05rem; font-weight: 600; color: var(--navy); margin-bottom: 0.5rem;">Specificity</h4>
+          <p style="font-size: 0.88rem; color: var(--warm-gray); line-height: 1.65;">One dollar amount. One veteran. One complete program. No ambiguity about what the money does.</p>
+        </div>
+        <div style="padding: 1.5rem; border: 1px solid var(--light-gray); background: var(--white);">
+          <h4 style="font-family: var(--font-display); font-size: 1.05rem; font-weight: 600; color: var(--navy); margin-bottom: 0.5rem;">Contrast</h4>
+          <p style="font-size: 0.88rem; color: var(--warm-gray); line-height: 1.65;">$2,500 vs. $800K–$1.2M. The comparison is presented factually, not emotionally. The math does the persuading.</p>
+        </div>
+        <div style="padding: 1.5rem; border: 1px solid var(--light-gray); background: var(--white);">
+          <h4 style="font-family: var(--font-display); font-size: 1.05rem; font-weight: 600; color: var(--navy); margin-bottom: 0.5rem;">Accountability</h4>
+          <p style="font-size: 0.88rem; color: var(--warm-gray); line-height: 1.65;">Transparent breakdown of what sponsorship covers. Governance and reporting standards visible throughout the site.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="visual-section fade-in">
+      <h3 style="font-family: var(--font-display); font-size: 1.4rem; font-weight: 600; color: var(--navy); margin-bottom: 1rem;">SEO Keywords</h3>
+      <p style="font-size: 0.95rem; color: var(--steel); line-height: 1.85; max-width: 700px; margin-bottom: 1rem;">
+        Target keyword clusters for organic search visibility:
+      </p>
+      <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+        <span style="font-size: 0.78rem; padding: 0.4rem 0.9rem; background: var(--white); border: 1px solid var(--light-gray); color: var(--steel);">veteran rehabilitation program</span>
+        <span style="font-size: 0.78rem; padding: 0.4rem 0.9rem; background: var(--white); border: 1px solid var(--light-gray); color: var(--steel);">PTSD treatment for veterans</span>
+        <span style="font-size: 0.78rem; padding: 0.4rem 0.9rem; background: var(--white); border: 1px solid var(--light-gray); color: var(--steel);">Ukraine veteran support</span>
+        <span style="font-size: 0.78rem; padding: 0.4rem 0.9rem; background: var(--white); border: 1px solid var(--light-gray); color: var(--steel);">veteran mentorship program</span>
+        <span style="font-size: 0.78rem; padding: 0.4rem 0.9rem; background: var(--white); border: 1px solid var(--light-gray); color: var(--steel);">cross-border veteran recovery</span>
+        <span style="font-size: 0.78rem; padding: 0.4rem 0.9rem; background: var(--white); border: 1px solid var(--light-gray); color: var(--steel);">sponsor a veteran</span>
+        <span style="font-size: 0.78rem; padding: 0.4rem 0.9rem; background: var(--white); border: 1px solid var(--light-gray); color: var(--steel);">veteran family reintegration</span>
+        <span style="font-size: 0.78rem; padding: 0.4rem 0.9rem; background: var(--white); border: 1px solid var(--light-gray); color: var(--steel);">trauma recovery program Europe</span>
+        <span style="font-size: 0.78rem; padding: 0.4rem 0.9rem; background: var(--white); border: 1px solid var(--light-gray); color: var(--steel);">veteran peer support international</span>
+        <span style="font-size: 0.78rem; padding: 0.4rem 0.9rem; background: var(--white); border: 1px solid var(--light-gray); color: var(--steel);">501c3 veteran nonprofit</span>
+        <span style="font-size: 0.78rem; padding: 0.4rem 0.9rem; background: var(--white); border: 1px solid var(--light-gray); color: var(--steel);">veteran PTSD cost analysis</span>
+        <span style="font-size: 0.78rem; padding: 0.4rem 0.9rem; background: var(--white); border: 1px solid var(--light-gray); color: var(--steel);">Ukrainian soldier rehabilitation</span>
+        <span style="font-size: 0.78rem; padding: 0.4rem 0.9rem; background: var(--white); border: 1px solid var(--light-gray); color: var(--steel);">US Ukraine veteran alliance</span>
+        <span style="font-size: 0.78rem; padding: 0.4rem 0.9rem; background: var(--white); border: 1px solid var(--light-gray); color: var(--steel);">ketamine MDMA veteran therapy</span>
+        <span style="font-size: 0.78rem; padding: 0.4rem 0.9rem; background: var(--white); border: 1px solid var(--light-gray); color: var(--steel);">Bulgaria rehabilitation center</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════ -->
+<!-- FINAL CTA                                    -->
+<!-- ════════════════════════════════════════════ -->
+<section class="section section-dark" style="padding: 5rem 2rem; text-align: center;">
+  <div class="section-inner">
+    <div class="fade-in">
+      <h2 style="font-family: var(--font-display); font-size: clamp(2rem, 4vw, 2.8rem); font-weight: 500; color: var(--white); max-width: 650px; margin: 0 auto 1.5rem; line-height: 1.25;">
+        Recovery begins when purpose returns.
+      </h2>
+      <p style="font-size: 1.05rem; color: rgba(255,255,255,0.55); max-width: 550px; margin: 0 auto 2.5rem; line-height: 1.8;">
+        Join a growing coalition of donors, partners, and veteran communities investing in structured recovery and cross-border resilience.
+      </p>
+      <div style="display: flex; gap: 1.25rem; justify-content: center; flex-wrap: wrap;">
+        <a href="#sponsor" class="btn-primary">Sponsor a Veteran — $2,500</a>
+        <a href="#partner" class="btn-outline">Explore Partnership</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════ -->
+<!-- FOOTER                                       -->
+<!-- ════════════════════════════════════════════ -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <h3>Veterans <span>Bridge</span> International</h3>
+      <p>A 501(c)(3) nonprofit restoring lives through structured rehabilitation and purpose-driven mentorship for veterans affected by the war in Ukraine.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Organization</h4>
+      <a href="#about">About VBI</a>
+      <a href="#program">The Program</a>
+      <a href="#mentorship">Mentorship</a>
+      <a href="#coalition">Partners</a>
+      <a href="#clinical">Clinical Innovation</a>
+      <a href="#impact">Impact</a>
+    </div>
+    <div class="footer-col">
+      <h4>Engage</h4>
+      <a href="#sponsor">Sponsor a Veteran</a>
+      <a href="#partner">Partner With Us</a>
+      <a href="#transparency">Transparency</a>
+      <a href="#">Media & Press</a>
+      <a href="#">Contact</a>
+    </div>
+    <div class="footer-col">
+      <h4>Legal</h4>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Use</a>
+      <a href="#">Financial Disclosures</a>
+      <a href="#">501(c)(3) Documentation</a>
+    </div>
+  </div>
+  <div class="footer-legal">
+    <span>&copy; 2025 Veterans Bridge International. All rights reserved.</span>
+    <span>EIN available on request</span>
+  </div>
+</footer>
+
+<!-- ── Scroll Animation Script ── -->
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
